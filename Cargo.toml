@@ -1,0 +1,13 @@
+[package]
+name = "roblox-task-scheduler"
+version = "0.1.0"
+authors = ["Amit Bashan"]
+edition = "2018"
+
+[lib]
+crate-type = ["dylib"]
+
+[dependencies]
+lazy_static = "*"
+cxx = "*"
+winapi = { version = "*", features = ["libloaderapi", "minwindef", "winnt", "consoleapi", "memoryapi"] }
